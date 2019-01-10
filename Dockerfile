@@ -4,8 +4,8 @@ FROM node:latest
 WORKDIR /
 
 # Install dependencies
-COPY package*.json ./
+COPY . .
 
 RUN npm i
 
-CMD ["node", "index.js"]
+CMD ["npm", "start"]
